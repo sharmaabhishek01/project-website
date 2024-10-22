@@ -1,0 +1,104 @@
+/* Main container styling */
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+.redesign-container {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+   
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  .redesign-title {
+    color: #2a6265;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .redesign-subtitle {
+    color: #EB5B00;
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 700;
+    font-family: serif;
+  }
+  
+  /* Card container */
+  .redesign-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+    font-family: serif;
+  }
+  
+  /* Individual card styling */
+  .redesign-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: serif;
+  }
+  
+  .redesign-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .redesign-card-image {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .redesign-card-heading {
+    margin: 12px 0;
+    font-size: 1.25rem;
+    color: #333;
+    font-family: serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .redesign-subtitle {
+      font-size: 1rem;
+    }
+  
+    .redesign-card {
+      width: 90%;
+    }
+    .redesign-title {
+      color: #2a6265;
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 650;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .redesign-subtitle {
+      font-size: 1rem;
+    }
+  
+    .redesign-card-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .redesign-card {
+      width: 100%;
+    }
+    .redesign-title {
+      color: #2a6265;
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 650;
+    }
+  }
+  

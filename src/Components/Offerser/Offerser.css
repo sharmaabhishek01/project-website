@@ -1,0 +1,73 @@
+/* Offerser.css */
+.cover-letter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+   
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .image-icon {
+    width: 390px;
+    height:auto;
+  }
+  
+  .content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease-out;
+    text-align: center;
+    text-align: start;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-left: 40px;
+    font-family: serif;
+  }
+  
+  .scroll-trigger {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .cover-letter-section {
+      padding: 1rem;
+    }
+  
+    .image-icon {
+      width: 200px;
+      height: auto;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-icon {
+      width: 200px;
+      height: auto;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,101 @@
+/* Main container */
+.community-container {
+    color: #838181;
+    text-align: center;
+    padding: 50px 50px;
+    font-family: serif;
+    
+  }
+  
+  /* Community section */
+  .community-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2a6265;
+  }
+  
+  .community-content .highlight {
+    color: #b3b3b3; /* Grayish color similar to the screenshot */
+  }
+  
+  .community-content p {
+    font-size: 25px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #544040;
+    font-family: serif;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Join button styles */
+  .join-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #555;
+    color: red;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  
+  .join-btn i {
+    margin-right: 10px;
+    font-size: 18px;
+    
+  }
+  
+  /* Telegram button */
+  .join-btn.telegram {
+    border-color: red;
+  }
+  
+  .join-btn.telegram:hover {
+    background-color:goldenrod;
+  }
+  
+  /* Discord button */
+  .join-btn.discord {
+    border-color: #7289da;
+  }
+  
+  .join-btn.discord:hover {
+    background-color: #7289da;
+  }
+  
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .community-content h2 {
+        font-size: 20px;
+    }
+  
+    .community-content p {
+        font-size: 14px;
+    }
+    .button-container {
+      margin-left: 45px;
+      justify-content: center;
+      gap: 10px;
+      margin-right: 60px;
+    }
+  }
+  

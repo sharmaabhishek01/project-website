@@ -1,0 +1,40 @@
+/* Basic styling for the services container */
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Styling for each service item */
+  .service-item {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+   margin-right: 70px;
+   font-family: "Lucida Handwriting";
+  }
+  
+  /* Make the text a bit smaller on smaller devices */
+  @media (max-width: 768px) {
+    .service-item {
+      font-size: 1rem;
+      margin-right: auto;
+    }
+  }
+  
+  /* On very small screens, stack the items vertically */
+  @media (max-width: 576px) {
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .service-item {
+      margin-bottom: 10px;
+    }
+  }
+  

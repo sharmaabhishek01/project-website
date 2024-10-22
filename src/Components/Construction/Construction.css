@@ -1,0 +1,125 @@
+.stunning-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+  
+  .stunning-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-content {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    font-family: serif;
+  }
+  
+  .text-content.animate-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: serif;
+    color: #EB5B00;
+  }
+  
+  .text-content h1 {
+    font-size: 1.5rem;
+    font-family: serif;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    font-family: serif;
+  }
+  
+  .uppercase-text {
+    text-transform: uppercase;
+  }
+  .learn-more{
+    color: green;
+  }
+  
+  @media (max-width: 768px) {
+    .image-container, .text-content {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+  
+    .text-content {
+      padding: 10px;
+      font-family: serif;
+    }
+  
+    .text-content h1 {
+      font-size: 1.5rem;
+      font-family: serif;
+    }
+  
+    .text-content h2 {
+      font-size: 1rem;
+      font-family: serif;
+      color: #EB5B00;
+    }
+  
+    .text-content p {
+      font-size: 1rem;
+      font-family: serif;
+    }
+    .text-content h1 {
+        margin-top: 50px;
+        font-size: 1rem;
+        font-family: serif;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .stunning-section {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      padding: 0;
+    }
+  
+    .text-content h1 {
+      font-size: 1rem;
+      font-family: serif;
+    }
+  
+    .text-content h2 {
+      font-size: 1.2rem;
+      font-family: serif;
+      color: #EB5B00;
+    }
+  
+    .text-content p {
+      font-size: 0.9rem;
+      font-family: serif;
+    }
+    .text-content h1 {
+        margin-top: 50px;
+        font-size: 1rem;
+        font-family: serif;
+      }
+  }
+  

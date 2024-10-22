@@ -1,0 +1,65 @@
+/* Container to hold text and image */
+.enzo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .enzo-text-section {
+    flex: 1;
+  }
+  
+  .enzo-text-block {
+    margin-bottom: 40px;
+  }
+  
+  .enzo-text-block h4 {
+    font-size: 16px;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+  }
+  
+  .enzo-text-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #EB5B00;
+  }
+  
+  .enzo-text-block p {
+    font-size: 18px;
+    color: #555;
+    font-family: serif;
+  }
+  
+  .enzo-image-section {
+    flex: 1;
+    
+  }
+  
+  .enzo-image-section img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .enzo-container {
+      flex-direction: column;
+    }
+  
+    .enzo-text-section, .enzo-image-section {
+      width: 100%;
+    }
+    .enzo-image-section img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        
+      }
+  }
+  

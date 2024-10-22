@@ -1,0 +1,100 @@
+/* Popup container styles */
+.info-popup-container {
+    position: fixed; /* Change from fixed to absolute to sit within the main content */
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure this is high enough to appear over other content */
+    animation: slideUp 0.5s ease;
+    overflow: hidden;
+  }
+  
+  /* Header with close button */
+  .info-popup-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    /* background-color: #004D40; */
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+  }
+  
+  .info-popup-close-btn {
+    background-color: transparent;
+    border: none;
+    color: #010101;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .info-popup-close-btn:hover {
+    color: black;
+  }
+  
+  /* Body with content */
+  .info-popup-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .info-popup-title {
+    font-size: 1.2rem;
+    color: #13130d;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .info-popup-link {
+    color: #040404;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .info-popup-link:hover {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .info-popup-container {
+      width: 250px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info-popup-container {
+      width: 90%;
+      right: 5%;
+      bottom: 10px;
+    }
+  
+    .info-popup-title {
+      font-size: 1rem;
+    }
+  
+    .info-popup-link {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Slide-up animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

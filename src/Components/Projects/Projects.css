@@ -1,0 +1,97 @@
+.project-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .project-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* filter: grayscale(100%); Start with black and white */
+  }
+  
+  .project-item img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0); /* Remove grayscale to show original colors */
+  }
+  
+  .see-more-btn {
+    background-color: goldenrod;
+    border-style: inset;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .see-more-btn:hover {
+    background-color: gray;
+    border-style: inset;
+  }
+  
+  /* CSS for expanded images */
+  .project-grid.expanded .project-item img {
+    width: 110%; /* Increase size by 10% */
+    height: auto;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(4, 4, 4, 0.6);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: rgba(4, 4, 4, 0.8); /* Darken on hover */
+  }
+  
+  .download-btn::before {
+    content: ""; /* Unicode arrow down symbol */
+  }
+  
+  /* Responsive CSS */
+  @media only screen and (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .see-more-btn {
+      padding: 8px 16px;
+    }
+  
+    /* Expanded image size for mobile view */
+    .project-grid.expanded .project-item img {
+      width: 105%; /* Slightly smaller increase for mobile */
+    }
+  }
+  

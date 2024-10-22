@@ -1,0 +1,118 @@
+/* Container Styling */
+.flipcont-container {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Subtitle Styling */
+  .flipcont-subtitle {
+    font-size: 2rem;
+    color: #3b4f50;
+    margin-top: 10px;
+    animation: slideRight 1.5s ease-in-out;
+    font-family: serif;
+  }
+  
+  /* Description Styling */
+  .flipcont-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+    line-height: 1.6;
+    animation: fadeInText 2s ease-in-out;
+    text-align: start;
+    font-family: serif;
+  }
+  
+  /* Button Styling */
+  .flipcont-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border-style: inset;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .flipcont-button:hover {
+    background-color: gray;
+  }
+  
+  /* Images Container */
+  .flipcont-images {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    cursor: pointer;
+  }
+  
+  /* Individual Image Styling */
+  .flipcont-image {
+    width: 100%;
+    max-width: 600px;  /* Ensures images are not too large */
+    height: auto;
+    display: block; /* Ensures images are displayed as block */
+    transition: transform 0.3s ease;
+  }
+  
+  .flipcont-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideRight {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .flipcont-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .flipcont-description {
+      font-size: 1rem;
+    }
+  
+    .flipcont-image {
+      width: 100%;
+      max-width: 100%; /* Ensure the images take up full width */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .flipcont-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .flipcont-description {
+      font-size: 0.9rem;
+    }
+  
+    .flipcont-image {
+      width: 100%;
+      max-width: 100%; /* Ensure images are fully responsive on small screens */
+    }
+  }
+  

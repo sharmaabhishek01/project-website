@@ -1,0 +1,57 @@
+/* Styling for about-section-modern */
+.about-section-modern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: row;
+  
+  }
+  
+  /* Image styling */
+  .about-img-modern {
+    width: 100%;
+    max-width: 1200px;
+    height: 50;
+    margin-bottom: 20px;
+   height: auto;
+  }
+  
+  /* Text content */
+  .about-text-modern {
+    font-size: 2.1rem;
+    line-height: 1.8;
+    color: #666;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+    font-family: serif;
+    margin-left: 10px;
+  }
+  
+  
+  /* Animation class */
+  .animate-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container-modern {
+      flex-direction: column;
+      padding: 1.5px;
+    }
+  
+    .about-img-modern {
+      max-width: 1200%;
+      height: auto;
+    }
+  
+    .about-text-modern {
+      font-size: 1rem;
+      margin-left: 10px;
+      text-align: start;
+    }
+  }
+  

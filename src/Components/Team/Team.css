@@ -1,0 +1,67 @@
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    padding: 20px;
+   
+  }
+  
+  .team-card {
+   
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(4, 4, 4, 0.3);
+    text-align: center;
+    color: rgb(246, 245, 245);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .team-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .team-info h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #EB5B00;
+    font-family: serif;
+  }
+  
+  .team-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #2a2929;
+    font-family: serif;
+  }
+  
+  .team-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #125941;
+    font-family: serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-card {
+      width: 90%; /* Make the cards take full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .team-container {
+      gap: 10px; /* Reduce gap on smaller desktops */
+    }
+  }
+  

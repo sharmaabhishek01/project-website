@@ -1,0 +1,91 @@
+/* Cookie popup container */
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    padding: 20px;
+    background-color: #f0eaea;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup-slide-in 0.6s ease-in-out forwards;
+    animation-delay: 10s; /* Animation delay of 10 seconds */
+    font-family: serif;
+  }
+  
+  /* Keyframes for popup entrance animation */
+  @keyframes popup-slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Popup content styles */
+  .cookie-content {
+    text-align: center;
+    font-family: serif;
+    position: static;
+  }
+  
+  .cookie-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgb(71, 107, 71);
+  }
+  
+  /* Buttons styling */
+  .cookie-button, .cookie-button2 {
+    background-color: #b8a900;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .cookie-button:hover, .cookie-button2:hover {
+    background-color: #f5ca0b;
+  }
+  
+  /* Style for "Manage Preferences" button */
+  .cookie-button2 {
+    background-color: #f39c12;
+  }
+  
+  .cookie-button2:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .cookie-popup {
+      width: 90%;
+      left: 5%;
+      bottom: 10px;
+    }
+  
+    .cookie-content p {
+      font-size: 0.9rem;
+    }
+  
+    .cookie-button, .cookie-button2 {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

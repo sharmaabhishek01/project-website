@@ -1,0 +1,51 @@
+/* Container for the link */
+.brochure-info {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Styling for the link */
+  .brochure-link {
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    text-decoration: none; /* Remove underline from text */
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+    font-family: serif;
+  }
+  
+  .brochure-link::after {
+    content: '';
+    display: block;
+  }
+  
+  /* Hover effect for the link */
+  .brochure-link:hover {
+    color: #2a6265;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .brochure-info {
+      padding: 30px; /* Adjust padding for smaller screens */
+      font-family: serif;
+    }
+  
+    .brochure-link {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      font-family: serif;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 1200px) {
+    .brochure-info {
+      padding: 70px; /* Increase padding for large screens */
+    }
+  
+    .brochure-link {
+      font-size: 28px; /* Increase font size for large screens */
+    }
+  }
+  
