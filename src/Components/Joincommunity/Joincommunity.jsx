@@ -14,7 +14,7 @@ const Joincommunity = () => {
                 </p>
                 <div className="button-container">
                     <a href="https://whatsapp.com/channel/0029Va63WRsCnA7lQVad3y28" target="_blank" rel="noopener noreferrer"className="join-btn telegram">
-                        <i className="icon-whtssap"></i> Join WhatsAap
+                        <i className="icon-whtssap"></i> Join 
                     </a>
                 </div>
             </div>

@@ -12,12 +12,12 @@ const testimonials = [
   },
   {
     name: "Priyanshu Chaudhry",
-    description: "Fourth Wall Architect delivered beyond our expectations. Their team perfectly combined creativity with functionality, crafting a space that reflects our vision.",
+    description: "Fourth Wall Architect delivered exceptional design solutions for my project. Their creativity  exceeded our expectations. Highly recommended!",
     image: Clint2,
   },
   {
     name: "Prince Singh",
-    description: "Fourth Wall Architect turned our ideas into a stunning reality. Their design expertise, attention to detail, and dedication to our project were exceptional.",
+    description: "Fourth Wall Architect provided outstanding designs and service. We're extremely satisfied with their work!",
     image: Clint3,
   },
 ];
