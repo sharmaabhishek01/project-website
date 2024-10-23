@@ -5,7 +5,7 @@ const Moreinfo = () => {
   const handleDownload = (e) => {
     e.preventDefault();
     const link = document.createElement('a');
-    link.href = './src/assets/Broucher-new-form-final.pdf';
+    link.href = './src/assets/broucher.pdf';
     link.setAttribute('download', 'FourthWallArchitect-Brochure.pdf');
     document.body.appendChild(link);
     link.click();

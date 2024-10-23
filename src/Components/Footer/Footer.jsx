@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {   faInstagram, faWhatsapp, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {   faInstagram, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 import logo from '../../assets/one-or-logo-29.png';
 
@@ -39,9 +39,6 @@ const Footer = () => {
           
         </div>
         <div className='social-icons'>
-          <a href="https://youtube.org" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
           <a href="https://wa.me/917549091730" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>

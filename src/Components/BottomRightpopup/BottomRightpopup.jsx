@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import "./BottomRightpopup.css"; // Updated CSS file
 import { Link } from 'react-scroll';
@@ -14,8 +12,8 @@ const BottomRightpopup = () => {
   const handleDownload = (e) => {
     e.preventDefault();
     const link = document.createElement('a');
-    link.href = './src/assets/Broucher-new-form-final.pdf';
-    link.setAttribute('download', 'FourthWallArchitect-Brochure.pdf');
+    link.href = './src/assets/broucher.pdf';
+    link.setAttribute('download', 'FourthWallArchitect.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

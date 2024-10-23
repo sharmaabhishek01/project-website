@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     name: "Priyanshu Chaudhry",
-    description: "Fourth Wall Architect delivered exceptional design solutions for my project. Their creativity  exceeded our expectations. Highly recommended!",
+    description: " `Fourth Wall Architect delivered exceptional design solutions for my project. Their creativity  exceeded our expectations. Highly recommended!`",
     image: Clint2,
   },
   {
