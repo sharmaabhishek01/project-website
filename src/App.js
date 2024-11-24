@@ -28,10 +28,6 @@ import TextImageSection from './Components/TextImageSection/TextImageSection'
 import Moreinfo from './Components/Moreinfo/Moreinfo'
 import Construction from './Components/Construction/Construction'
 
-
-
-
-
 const App = () => {
 
   const [playState, setPlayState] = useState(false);
@@ -44,53 +40,45 @@ const App = () => {
       <Hero />
       <div className="container">
 
-        <br />
-        <br />
-        <br />
-        <About4 />
-        <br />
-        <br />
-        <br />
-        <About3 />
 
-        <br />
-        
+        <About4 />
+
+        <About3 />
 
         <div className="App">
           <Counter />
         </div>
-        <br />
+
         <About setPlayState={setPlayState} />
 
         <About2 />
-        <Moreinfo/>
+        <Moreinfo />
         <Title subTitle="" title={<span style={{ color: '#2a6265' }}></span>} />
         <Services />
-        <br/><br/><br/>
+
         <Construction />
-        <br/><br/><br/>
-        <TextImageSection/>
-        <br/><br/><br/>
+
+        <TextImageSection />
+
         <Offerser />
-         <br/><br/><br/>
-        <br/><br/>
+
+
         <Title subTitle="" title={<span style={{ color: '#2a6265' }}>ARCHITECTURAL SOLUTIONS</span>} />
-        <br/><br/>
+
         <Flipimage />
         <Flipcont />
-        <br /><br /><br/><br/><br/><br/><br/><br/><br/>
+
         <JoinCommunity />
-        <br />
-        <br />
+
         <Title subTitle="" title={<span style={{ color: '#2a6265' }}>GALLERY</span>} />
         <Projects />
 
-        <br />
+
         <Title subTitle="" title={<span style={{ color: '#2a6265' }}>OUR TEAM</span>} />
         <Team />
-        <br /><br /><br /><br /><br />
+
         <Testimonials />
-        <br /><br />
+
         <Title subTitle="" title={<span style={{ color: '#2a6265' }}>CONTECT US</span>} />
         <Contact />
 

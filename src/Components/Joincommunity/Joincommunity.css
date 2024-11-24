@@ -31,11 +31,7 @@
   }
   
   /* Button container */
-  .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
+ 
   
   /* Join button styles */
   .join-btn {
@@ -57,10 +53,7 @@
     
   }
   
-  /* Telegram button */
-  .join-btn.telegram {
-    border-color: red;
-  }
+ 
   
   .join-btn.telegram:hover {
     background-color:goldenrod;
@@ -91,11 +84,6 @@
     .community-content p {
         font-size: 14px;
     }
-    .button-container {
-      margin-left: 45px;
-      justify-content: center;
-      gap: 10px;
-      margin-right: 60px;
-    }
+  
   }
   

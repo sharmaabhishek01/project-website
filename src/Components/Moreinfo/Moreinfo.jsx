@@ -1,22 +1,18 @@
+// src/components/DownloadBrochure.js
 import React from 'react';
 import './Moreinfo.css';
 
 const Moreinfo = () => {
-  const handleDownload = (e) => {
-    e.preventDefault();
-    const link = document.createElement('a');
-    link.href = './src/assets/broucher.pdf';
-    link.setAttribute('download', 'FourthWallArchitect-Brochure.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
-    <div className="brochure-info">
-      <a href="/" className="brochure-link" onClick={handleDownload}>
-        Download brochure here
-      </a>
+    <div className="download-container">
+      <h2 className="download-title">Download Our Brochure</h2>
+      <p className="download-description">
+        Discover more about our services, projects, and team in our detailed brochure.
+      </p>
+      <a href="/Broucher.pdf" download="Fourth_Wall_Architect_Brochure">
+  Download Brochure
+</a>
+
     </div>
   );
 };

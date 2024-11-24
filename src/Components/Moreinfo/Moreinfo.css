@@ -1,51 +1,54 @@
-/* Container for the link */
-.brochure-info {
-    text-align: center;
-    padding: 50px;
+/* src/components/DownloadBrochure.css */
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.download-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2a6265;
+}
+
+.download-description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  color: #666;
+}
+
+.download-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .download-title {
+    font-size: 1.5rem;
   }
   
-  /* Styling for the link */
-  .brochure-link {
-    font-size: 24px;
-    color: rgb(80, 80, 80);
-    text-decoration: none; /* Remove underline from text */
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s;
-    font-family: serif;
+  .download-description {
+    font-size: 0.9rem;
   }
   
-  .brochure-link::after {
-    content: '';
-    display: block;
+  .download-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
-  
-  /* Hover effect for the link */
-  .brochure-link:hover {
-    color: #2a6265;
-  }
-  
-  /* Media query for small screens */
-  @media (max-width: 768px) {
-    .brochure-info {
-      padding: 30px; /* Adjust padding for smaller screens */
-      font-family: serif;
-    }
-  
-    .brochure-link {
-      font-size: 20px; /* Adjust font size for smaller screens */
-      font-family: serif;
-    }
-  }
-  
-  /* Media query for large screens */
-  @media (min-width: 1200px) {
-    .brochure-info {
-      padding: 70px; /* Increase padding for large screens */
-    }
-  
-    .brochure-link {
-      font-size: 28px; /* Increase font size for large screens */
-    }
-  }
-  
+}

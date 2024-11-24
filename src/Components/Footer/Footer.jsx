@@ -32,8 +32,8 @@ const Footer = () => {
           <div className='link-section'>
             <h6>Discover</h6>
             <ul>
-              <li><a href="#blogs">Blogs</a></li>
-              <li><a href="#news">Recent in News</a></li>
+              <li><Link to='home-container' href='Home' smooth={true} offset={0} duration={500}>Blog</Link></li>
+              <li><Link to='home-container' href='Home' smooth={true} offset={0} duration={500}>Resent in News</Link></li>
             </ul>
           </div>
           
@@ -50,11 +50,25 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+     
       <div className='footer-bottom'>
-        <p>Hajipur, Vaishali (844101)</p>
-        <p><a href="/terms">Terms & Conditions</a> · <a href="/privacy">Privacy Policy</a></p>
-        <p>&#169; 2024 Fourt Wall Architect. All Rights Reserved</p>
-      </div>
+  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', width: '100%' }}>
+    <p style={{ margin: '5px 0' }}>&#169; 2024 Fourt Wall Architect. All Rights Reserved</p>
+    <p style={{ margin: '5px 0' }}>
+      <a
+        href="https://www.linkedin.com/in/abhishek-sharma-006632208/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: 'none' }}
+      >
+        Design by Abhishek Sharma
+      </a>
+    </p>
+  </div>
+</div>
+
+
 
     </footer>
   );

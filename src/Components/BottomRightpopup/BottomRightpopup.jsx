@@ -9,15 +9,7 @@ const BottomRightpopup = () => {
     setShowPopup(false);
   };
 
-  const handleDownload = (e) => {
-    e.preventDefault();
-    const link = document.createElement('a');
-    link.href = './src/assets/broucher.pdf';
-    link.setAttribute('download', 'FourthWallArchitect.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
 
   return (
     <>
@@ -31,9 +23,9 @@ const BottomRightpopup = () => {
               Need more info?
             </Link>
             <br /><br />
-            <a href="/" className="info-popup-link" onClick={handleDownload}>
-              Download brochure here
-            </a>
+            <a href="/Broucher.pdf" download="Fourth_Wall_Architect_Brochure">
+  Download Brochure
+</a>
             <p>
               <Link to='home-container' smooth={true} offset={0} duration={500}>
                 Ask us your question

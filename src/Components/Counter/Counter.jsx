@@ -27,10 +27,10 @@ const handleScroll = () => {
 
   if (position < screenPosition && position > -screenPosition) {
     setCountersVisible(true);
-    section.classList.add('active'); // Add this line
+    section.classList.add('active'); 
   } else {
     setCountersVisible(false);
-    section.classList.remove('active'); // Add this line
+    section.classList.remove('active'); 
   }
 };
 

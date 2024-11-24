@@ -42,10 +42,11 @@
   .popup-content p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: #2a6265;
   }
   
   /* Loader animation around the popup */
-  .popup-overlay::before {
+  /* .popup-overlay::before {
     content: '';
     position: absolute;
     width: 340px;
@@ -55,17 +56,17 @@
     border-radius: 50%;
     animation: spin 2s linear infinite;
     z-index: 9998;
-  }
+  } */
   
   /* Animation for spinning loader */
-  @keyframes spin {
+  /* @keyframes spin {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  }
+  } */
   
   /* Responsive styling */
   @media (max-width: 600px) {
