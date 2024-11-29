@@ -56,14 +56,30 @@ const Footer = () => {
   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', width: '100%' }}>
     <p style={{ margin: '5px 0' }}>&#169; 2024 Fourt Wall Architect. All Rights Reserved</p>
     <p style={{ margin: '5px 0' }}>
-      <a
+      {/* <a
         href="https://www.linkedin.com/in/abhishek-sharma-006632208/"
         target="_blank"
         rel="noopener noreferrer"
         style={{ textDecoration: 'none' }}
       >
         Design by Abhishek Sharma
-      </a>
+      </a> */}
+       <a
+              href="https://www.linkedin.com/in/abhishek-sharma-006632208/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+                display: 'inline-block',
+                backgroundImage: 'linear-gradient(to right, #ff6b6b, #f4d03f, #5f27cd)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                animation: 'color-change 2s infinite',
+              }}
+            >
+              Design by Abhishek Sharma
+            </a>
     </p>
   </div>
 </div>
