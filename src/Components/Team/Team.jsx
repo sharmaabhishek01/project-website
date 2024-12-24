@@ -39,8 +39,6 @@ const Team = () => {
           focusing on innovative solutions for modern interior and exterior projects.
           </p>
         </div>
-
-        
         
       </div>
     </div>

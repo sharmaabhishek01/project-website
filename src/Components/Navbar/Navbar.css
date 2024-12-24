@@ -12,8 +12,8 @@ nav {
 }
 
 .logo {
-    width: 130px;
-    height: 130px;
+    width: 90px;
+    height: 90px;
 }
 
 nav ul li {
@@ -70,14 +70,14 @@ nav ul li {
 
 @media (max-width: 1000px) {
     .logo {
-        width: 140px;
+        width: 100px;
     }
     nav ul li {
         margin: 10px 15px;
     }
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -109,8 +109,8 @@ nav ul li {
         right: -200px;
     }
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 }
 

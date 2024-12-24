@@ -74,7 +74,7 @@ const App = () => {
         <Projects />
 
 
-        <Title subTitle="" title={<span style={{ color: '#2a6265' }}>OUR TEAM</span>} />
+        <Title subTitle="" title={<span style={{ color: '#2a6265' }}>The brains behind FourthwallArchitect</span>} />
         <Team />
 
         <Testimonials />
